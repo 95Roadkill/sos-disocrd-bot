@@ -98,7 +98,7 @@ bot.on("message", async message => {
 	}
 
 	
-	 if(command === "ranks") { 
+	 if(command === `${prefix}ranks`) { 
   let myembed = new Discord.RichEmbed() 
     .setTitle('Ranks') 
     .setColor('#800080') 
