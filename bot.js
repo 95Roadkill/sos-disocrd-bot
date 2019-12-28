@@ -123,6 +123,27 @@ bot.on("message", async message => {
 				switch (reaction.emoji.name){
 					case '🦎':
 						message.channel.send("Lizard Boi.")
+						msg.delete();
+					break;
+					case '🐒':
+						message.channel.send("Monkey Boi.")
+						msg.delete();
+					break;
+					case '🐛':
+						message.channel.send("Worm Boi.")
+						msg.delete();
+					break;
+					case '🐝':
+						message.channel.send("Fly Boi.")
+						msg.delete();
+					break;
+					case '🦃':
+						message.channel.send("Turkey Boi.")
+						msg.delete();
+					break;
+					case '🦥':
+						message.channel.send("Sloth Boi.")
+						msg.delete();
 					break;
 				}
 			})
