@@ -182,7 +182,7 @@ bot.on("message", async message => {
 						msg.delete();
 					break;
 				}
-			}).catch(() = > {
+			}).catch(() => {
 				msg.delete();
 			});
 		});
