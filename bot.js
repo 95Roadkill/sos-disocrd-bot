@@ -98,6 +98,7 @@ bot.on("message", async message => {
 	}
 	
 	if(command === `${prefix}ranks`) { 
+		const filter = (reaction,user)=> [`🦎`,'🐒','🐛','🐝','🦃','🦥'].includes(reaction.emoji.name) && user.id === message.author.id;
 		let myembed = new Discord.RichEmbed() 
 			.setTitle('Ranks') 
 			.setColor('#800080') 
@@ -112,6 +113,19 @@ bot.on("message", async message => {
 			await msg.react(`🐝`);
 			await msg.react(`🦃`);
 			await msg.react(`🦥`);
+
+			msg.awaiReaction(filter, {
+				max: 1,
+				time: 10000,
+				errors: [`time`]
+			}).then(collected => {
+				const reaction = collected.first();
+				switch (reaction.emoji.name){
+					case '🦎':
+						message.channel.send("Lizard Boi.")
+					break;
+				}
+			})
 		});
 		Timeout(Settings.Timeout);
 	}
