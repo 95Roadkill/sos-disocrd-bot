@@ -116,7 +116,7 @@ bot.on("message", async message => {
 
 			msg.awaitReactions(filter, {
 				max: 1,
-				time: 10000,
+				time: 15000,
 				errors: [`time`]
 			}).then(collected => {
 				const reaction = collected.first();
