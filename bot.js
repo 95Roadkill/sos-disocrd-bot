@@ -114,7 +114,7 @@ bot.on("message", async message => {
 			await msg.react(`🦃`);
 			await msg.react(`🦥`);
 
-			msg.awaiReaction(filter, {
+			msg.awaitReaction(filter, {
 				max: 1,
 				time: 10000,
 				errors: [`time`]
