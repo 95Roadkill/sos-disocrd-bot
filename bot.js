@@ -18,7 +18,7 @@ var Activities = [
 	"Carnifex for Arbiter",
 	"Raiding the Generator room.",
 	"Entering SS bunks.",
-	"Thorwing Wallets at William.",
+	"Throwing Wallets at William.",
 	"Spanking some Monkeys.",
 	"Stealing Mreze's wives.",
 	"Searching for Chesquik",
