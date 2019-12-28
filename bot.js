@@ -42,7 +42,7 @@ bot.on("ready", async () => {
 	setInterval(() => {
         const index = Math.floor(Math.random() * (Activities.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
         bot.user.setActivity(Activities[index], { type: "STREAMING", url: "https://www.twitch.tv/somethingluulop"}); // sets bot's activities to one of the phrases in the arraylist.
-    }, 5000)
+    }, 10000)
 
 });
 
