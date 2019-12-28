@@ -96,23 +96,26 @@ bot.on("message", async message => {
     		Timeout(Settings.Timeout);
 		});
 	}
+	
+	if(command === `${prefix}ranks`) { 
+		let myembed = new Discord.RichEmbed() 
+			.setTitle('Ranks') 
+			.setColor('#800080') 
+			.setDescription('Click a reaction for the respected ranks.') 
+			.addField("Species", "Sangheili \n Jiralhanae \n Mgalekgolo \n Yanme'e \n Kig-Yar \n Unngoy",true)
+			.addField("Reactions", ":lizard: \n :monkey: \n :bug: \n :bee: \n :turkey: \n :sloth:",true) 
+			.setThumbnail("https://revivalservers.com/home/assets/media/logos/main.png") 
+		message.channel.send(myembed).then(async msg =>{
+			await msg.react(":lizard:");
+			await msg.react(":monkey:");
+			await msg.react(":bug:");
+			await msg.react(":bee:");
+			await msg.react(":turkey:");
+			await msg.react(":sloth:");
+		});
+		Timeout(Settings.Timeout);
+	}
 
-	
-	 if(command === `${prefix}ranks`) { 
-  let myembed = new Discord.RichEmbed() 
-    .setTitle('Ranks') 
-    .setColor('#800080') 
-    .setDescription('Click a reaction for the respected ranks.') 
-    .addField("Species", "Sangheili \n Jiralhanae \n Mgalekgolo \n Yanme'e \n Kig-Yar \n Unngoy",true)
-	.addField("Reactions", ":lizard: \n :monkey: \n :bug: \n :bee: \n :turkey: \n :sloth:",true) 
-    .setThumbnail("https://revivalservers.com/home/assets/media/logos/main.png") 
-  message.channel.send(myembed) 
-Timeout(Settings.Timeout);
-  }
-
-	
-	
-	
 	if(command === `${prefix}players`){ // Players Info
 		var Players = ""
 		var PlayerScore = ""
