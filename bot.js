@@ -1,4 +1,6 @@
 const Settings = require("./bot-settings.json");
+const Activitys = require("./bot-activitys.json");
+
 const Discord = require("discord.js");
 const SourceQuery = require("sourcequery");
 
@@ -33,7 +35,7 @@ bot.on("ready", async () => {
         const index = Math.floor(Math.random() * (Activitys.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
         bot.user.setActivity(Activitys[index], { type: "STREAMING", url: "https://www.twitch.tv/somethingluulop"}); // sets bot's activities to one of the phrases in the arraylist.
     }, 5000)
-    
+
 });
 
 bot.on("message", async message => {
