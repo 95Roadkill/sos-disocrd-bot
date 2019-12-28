@@ -23,7 +23,16 @@ var Activities = [
 	"Spanking some Monkeys.",
 	"Stealing Mreze's wives.",
 	"Searching for Chesquik",
-	"Eating ice cubes."
+	"Eating ice cubes.",
+	"Cooking Humans.",
+	"Healing in the FFA.",
+	"Watching ONI eat babies.",
+	"Killing Civilians",
+	"Surrendering the AI.",
+	"Blood dueling a Minor.",
+	"Killing Recruits.",
+	"Asking for promotions",
+	"Eating Ramen."
 ]
 
 var SQ = new SourceQuery(1000); // 1000ms timeout
