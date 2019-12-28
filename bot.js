@@ -32,7 +32,9 @@ var Activities = [
 	"Blood dueling a Minor.",
 	"Killing Recruits.",
 	"Asking for promotions",
-	"Eating Ramen."
+	"Eating Ramen.",
+	"Deleting Vel'ket.",
+	"Feeding Flood."
 ]
 
 var SQ = new SourceQuery(1000); // 1000ms timeout
@@ -199,9 +201,9 @@ bot.on("message", async message => {
 	}
 
 	if(command === `${prefix}players`){ // Players Info
-		var Players = ""
-		var PlayerScore = ""
-		var PlayerTime = ""
+		var Players = "```"
+		var PlayerScore = "```"
+		var PlayerTime = "```"
 		SQ.getPlayers(function(err, info){
 			for(var i=0; i < info.length - 1; i++){
 				if (info[i].name != ""){
@@ -210,6 +212,11 @@ bot.on("message", async message => {
 					PlayerTime = PlayerTime + FormatTime(info[i].online) + "\n";
 				}
 			}
+			
+			Players = Players + "````"
+			PlayerScore = PlayerScore + "````"
+			PlayerTime = PlayerTime + "````"
+
 			const Embed = new Discord.RichEmbed()
 				.setTitle("Connected Players:")
     			.setColor('#800080')
