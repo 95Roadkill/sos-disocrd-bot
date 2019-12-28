@@ -100,6 +100,7 @@ bot.on("message", async message => {
     .addField(':eyeglasses: Unggoy:', '`Minor, Storm, Major, Murmillo, Commando, Champion, Ultra, Zealot, Imperial, Commander.`') 
     .setThumbnail("https://revivalservers.com/home/assets/media/logos/main.png") 
   message.channel.send(myembed) 
+Timeout(Settings.Timeout);
   }
 
 	
