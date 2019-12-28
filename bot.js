@@ -14,7 +14,15 @@ var Activities = [
 	"Glassing reach.",
 	"Kamuji is dead.",
 	"Sometimes I dream about cheese.",
-	"WORT WORT WORT."
+	"WORT WORT WORT.",
+	"Carnifex for Arbiter",
+	"Raiding the Generator room.",
+	"Entering SS bunks.",
+	"Thorwing Wallets at William.",
+	"Spanking some Monkeys.",
+	"Stealing Mreze's wives.",
+	"Searching for Chesquik",
+	"Eating ice cubes."
 ]
 
 var SQ = new SourceQuery(1000); // 1000ms timeout
