@@ -124,9 +124,11 @@ bot.on("message", async message => {
 				switch (reaction.emoji.name){
 					case '🦎':
 						let Embed = new Discord.RichEmbed() 
-							.setTitle('Sangheili Ranks.') 
+							.setTitle('Sangheili Ranks.')
+							.setColor('#800080')
 							.setThumbnail('https://www.halopedia.org/images/7/73/H2A_Sangheili_Ultra_2.png')
-							.addField("Ranks",Ranks.Sangheili) 
+							.addField("Ranks",Ranks.SangheiliRanks)
+							.addField("Cooldowns",Ranks.SangheiliCooldown);
 						message.channel.send(Embed);
 						msg.delete();
 					break;
