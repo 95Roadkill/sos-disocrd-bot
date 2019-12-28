@@ -102,10 +102,9 @@ bot.on("message", async message => {
   let myembed = new Discord.RichEmbed() 
     .setTitle('Ranks') 
     .setColor('#800080') 
-    .setDescription('These are all the ranks in Swords of Sanghelios!') 
-    .addField(':tophat: Sangheili:', '`Minor, Storm, Major, Blademaster, Ultra, Commander, Field Marshall, General, Zealot, Field Master, Shipmaster, Fleetmaster, Supreme Commander, Fleet Admiral, Imperial Fleet Admiral, Councilor, High Councilor, Arbiter. ` ', true) 
-    .addField(':dark_sunglasses: Kig-Yar:', '`Minor, Storm, Major, Murmillo, Commando, Champion, Ultra, Zealot, Imperial, Commander.`', true) 
-    .addField(':eyeglasses: Unggoy:', '`Minor, Storm, Major, Murmillo, Commando, Champion, Ultra, Zealot, Imperial, Commander.`', true) 
+    .setDescription('Click a reaction for the respected ranks.') 
+    .addField("Species", "Sangheili \n Jiralhanae \n Mgalekgolo \n Yanme'e \n Kig-Yar \n Unngoy",true)
+	.addField("Reactions", ":lizard: \n :monkey: \n :bug: \n :bee: \n :turkey: \n :sloth:",true) 
     .setThumbnail("https://revivalservers.com/home/assets/media/logos/main.png") 
   message.channel.send(myembed) 
 Timeout(Settings.Timeout);
