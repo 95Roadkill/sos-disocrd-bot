@@ -127,8 +127,8 @@ bot.on("message", async message => {
 							.setTitle('Sangheili Ranks.')
 							.setColor('#800080')
 							.setThumbnail('https://www.halopedia.org/images/7/73/H2A_Sangheili_Ultra_2.png')
-							.addField("Ranks",Ranks.SangheiliRanks)
-							.addField("Cooldowns",Ranks.SangheiliCooldown);
+							.addField("Ranks",Ranks.SangheiliRanks,true)
+							.addField("Cooldowns",Ranks.SangheiliCooldown,true);
 						message.channel.send(Embed);
 						msg.delete();
 					break;
