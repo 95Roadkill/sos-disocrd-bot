@@ -212,10 +212,10 @@ bot.on("message", async message => {
 					PlayerTime = PlayerTime + FormatTime(info[i].online) + "\n";
 				}
 			}
-			
-			Players = Players + "````"
-			PlayerScore = PlayerScore + "````"
-			PlayerTime = PlayerTime + "````"
+
+			Players = Players + "```"
+			PlayerScore = PlayerScore + "```"
+			PlayerTime = PlayerTime + "```"
 
 			const Embed = new Discord.RichEmbed()
 				.setTitle("Connected Players:")
