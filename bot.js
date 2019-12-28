@@ -89,6 +89,22 @@ bot.on("message", async message => {
 		});
 	}
 
+	
+	 if(command === "ranks") { 
+  let myembed = new Discord.RichEmbed() 
+    .setTitle('Ranks') 
+    .setColor('#800080') 
+    .setDescription('These are all the ranks in Swords of Sanghelios!') 
+    .addField(':tophat: Sangheili:', '`Minor, Storm, Major, Blademaster, Ultra, Commander, Field Marshall, General, Zealot, Field Master, Shipmaster, Fleetmaster, Supreme Commander, Fleet Admiral, Imperial Fleet Admiral, Councilor, High Councilor, Arbiter. ` ', true) 
+    .addField(':dark_sunglasses: Kig-Yar:', '`Minor, Storm, Major, Murmillo, Commando, Champion, Ultra, Zealot, Imperial, Commander.`', true) 
+    .addField(':eyeglasses: Unggoy:', '`Minor, Storm, Major, Murmillo, Commando, Champion, Ultra, Zealot, Imperial, Commander.`') 
+    .setThumbnail("https://revivalservers.com/home/assets/media/logos/main.png") 
+  message.channel.send(myembed) 
+  }
+
+	
+	
+	
 	if(command === `${prefix}players`){ // Players Info
 		var Players = ""
 		var PlayerScore = ""
@@ -102,7 +118,7 @@ bot.on("message", async message => {
 				}
 			}
 			const Embed = new Discord.RichEmbed()
-				.setTitle("Connected Players.")
+				.setTitle("Connected Players:")
     			.setColor('#800080')
     			.setThumbnail('https://revivalservers.com/home/assets/media/logos/main.png')
     			.addField('Players',Players, true)
