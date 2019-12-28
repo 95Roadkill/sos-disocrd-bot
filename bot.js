@@ -105,7 +105,7 @@ bot.on("message", async message => {
     .setDescription('These are all the ranks in Swords of Sanghelios!') 
     .addField(':tophat: Sangheili:', '`Minor, Storm, Major, Blademaster, Ultra, Commander, Field Marshall, General, Zealot, Field Master, Shipmaster, Fleetmaster, Supreme Commander, Fleet Admiral, Imperial Fleet Admiral, Councilor, High Councilor, Arbiter. ` ', true) 
     .addField(':dark_sunglasses: Kig-Yar:', '`Minor, Storm, Major, Murmillo, Commando, Champion, Ultra, Zealot, Imperial, Commander.`', true) 
-    .addField(':eyeglasses: Unggoy:', '`Minor, Storm, Major, Murmillo, Commando, Champion, Ultra, Zealot, Imperial, Commander.`') 
+    .addField(':eyeglasses: Unggoy:', '`Minor, Storm, Major, Murmillo, Commando, Champion, Ultra, Zealot, Imperial, Commander.`', true) 
     .setThumbnail("https://revivalservers.com/home/assets/media/logos/main.png") 
   message.channel.send(myembed) 
 Timeout(Settings.Timeout);
