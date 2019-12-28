@@ -182,7 +182,9 @@ bot.on("message", async message => {
 						msg.delete();
 					break;
 				}
-			})
+			}).catch(() = > {
+				msg.delete();
+			});
 		});
 		Timeout(Settings.Timeout);
 	}
