@@ -106,12 +106,12 @@ bot.on("message", async message => {
 			.addField("Reactions", ":lizard: \n :monkey: \n :bug: \n :bee: \n :turkey: \n :sloth:",true) 
 			.setThumbnail("https://revivalservers.com/home/assets/media/logos/main.png") 
 		message.channel.send(myembed).then(async msg =>{
-			await msg.react(`lizard`);
-			await msg.react(`monkey`);
-			await msg.react(`bug`);
-			await msg.react(`bee`);
-			await msg.react(`turkey`);
-			await msg.react(`sloth`);
+			await msg.react("660579809436368929");
+			await msg.react("660579920006610964");
+			await msg.react("660579976210284596");
+			await msg.react("660580032544112660");
+			await msg.react("660580078157299762");
+			await msg.react("660580291366354944");
 		});
 		Timeout(Settings.Timeout);
 	}
