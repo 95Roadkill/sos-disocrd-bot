@@ -221,9 +221,9 @@ bot.on("message", async message => {
 				.setTitle("Connected Players:")
     			.setColor('#800080')
     			.setThumbnail('https://revivalservers.com/home/assets/media/logos/main.png')
-    			.addField('Players',Players, true)
-    			.addField('Score', PlayerScore, true)
-    			.addField('Time', PlayerTime, true);
+    			.addField('**Players**',Players, true)
+    			.addField('**Score**', PlayerScore, true)
+    			.addField('**Time**', PlayerTime, true);
     		message.channel.send(Embed);
     		Timeout(Settings.Timeout);
 		});
