@@ -9,13 +9,13 @@ const bot = new Discord.Client({disbledEveryone: true});
 
 let CommandUsed = false;
 
-var Activities = {
+var Activities = [
 	"Dabbing on them haters.",
 	"Glassing reach.",
 	"Kamuji is dead.",
 	"Sometimes I dream about cheese.",
 	"WORT WORT WORT."
-}
+]
 
 var SQ = new SourceQuery(1000); // 1000ms timeout
 SQ.open(Settings.IP, Settings.Port);
