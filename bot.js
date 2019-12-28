@@ -32,7 +32,7 @@ bot.on("ready", async () => {
 	console.log(`Bot is online. ${bot.user.username}.`);
 	
 	setInterval(() => {
-        const index = Math.floor(Math.random() * (Activitys.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
+        const index = Math.floor(Math.random() * (#Activitys - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
         bot.user.setActivity(Activitys[index], { type: "STREAMING", url: "https://www.twitch.tv/somethingluulop"}); // sets bot's activities to one of the phrases in the arraylist.
     }, 5000)
 
