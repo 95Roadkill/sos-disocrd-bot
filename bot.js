@@ -134,23 +134,53 @@ bot.on("message", async message => {
 						msg.delete();
 					break;
 					case '🐒':
-						message.channel.send("Monkey Boi.")
+						let Embed = new Discord.RichEmbed() 
+							.setTitle('Jiralhanae Ranks.')
+							.setColor('#800080')
+							.setThumbnail('https://www.halopedia.org/images/thumb/9/93/H2A_Jiralhanae.png/338px-H2A_Jiralhanae.png')
+							.addField("Ranks",Ranks.JiralhanaeRanks,true)
+							.addField("Cooldowns",Ranks.JiralhanaeCooldown,true);
+						message.channel.send(Embed);
 						msg.delete();
 					break;
 					case '🐛':
-						message.channel.send("Worm Boi.")
+						let Embed = new Discord.RichEmbed() 
+							.setTitle('Mgalekgolo Ranks.')
+							.setColor('#800080')
+							.setThumbnail('https://www.halopedia.org/images/thumb/c/c3/H5G-MgalekgoloHunter.png/486px-H5G-MgalekgoloHunter.png')
+							.addField("Ranks",Ranks.MgalekgoloRanks,true)
+							.addField("Cooldowns",Ranks.MgalekgoloCooldown,true);
+						message.channel.send(Embed);
 						msg.delete();
 					break;
 					case '🐝':
-						message.channel.send("Fly Boi.")
+						let Embed = new Discord.RichEmbed() 
+							.setTitle("Yanme'e Ranks.")
+							.setColor('#800080')
+							.setThumbnail('https://www.halopedia.org/images/thumb/e/e5/Yanmee_H2A.png/617px-Yanmee_H2A.png')
+							.addField("Ranks",Ranks.YanmeeRanks,true)
+							.addField("Cooldowns",Ranks.YanmeeCooldown,true);
+						message.channel.send(Embed);
 						msg.delete();
 					break;
 					case '🦃':
-						message.channel.send("Turkey Boi.")
+						let Embed = new Discord.RichEmbed() 
+							.setTitle("Kig-Yar Ranks.")
+							.setColor('#800080')
+							.setThumbnail('https://www.halopedia.org/images/thumb/7/72/JackalMinor.png/387px-JackalMinor.png')
+							.addField("Ranks",Ranks.KigYarRanks,true)
+							.addField("Cooldowns",Ranks.KigYarCooldown,true);
+						message.channel.send(Embed);
 						msg.delete();
 					break;
 					case '🦥':
-						message.channel.send("Sloth Boi.")
+						let Embed = new Discord.RichEmbed() 
+							.setTitle("Unngoy Ranks.")
+							.setColor('#800080')
+							.setThumbnail('https://www.halopedia.org/images/thumb/0/0b/H2A_Unggoy.png/554px-H2A_Unggoy.png')
+							.addField("Ranks",Ranks.UnngoyRanks,true)
+							.addField("Cooldowns",Ranks.UnngoyCooldown,true);
+						message.channel.send(Embed);
 						msg.delete();
 					break;
 				}

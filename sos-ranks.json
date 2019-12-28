@@ -1,4 +1,19 @@
 {
 	"SangheiliRanks" : "**Leader of the SoS** \n Arbiter \n \n **Senior Command** \n High Councilor \n Councilor \n Imperial Fleet Admiral \n Fleet Admiral \n Supreme Commander \n \n **High Command ** \n Fleet Master \n Shipmaster \n Field Master \n Zealot \n \n **Low Command** \n General \n Field Marshall \n Commander \n \n **Officer** \n Ultra \n Blade Master \n \n **Enlisted** \n Major \n Storm \n Minor",
-	"SangheiliCooldown" : "\n \n N/A \n  \n N/A \n N/A \n N/A \n 5 Weeks \n 3-4 Weeks"
+	"SangheiliCooldown" : "\n\n N/A \n\n N/A \n N/A \n N/A \n 5 Weeks \n 3-4 Weeks",
+
+	"JiralhanaeRanks" : "No Information.",
+	"JiralhanaeCooldown" : "No Information.",
+
+	"MgalekgoloRanks" : "Colony Lead \n Captain-Ultra \n Captain \n Major \n Storm \n Minor",
+	"MgalekgoloCooldown" : "2 Weeks \n 1-1/2 Weeks \n 1 Week \n 6-7 Days \n 4-5 Days \n 2-3 Days",
+
+	"YanmeeRanks" : "Queen \n Leader \n Resolute \n Stalwart \n Ultra \n Buzzer \n Stinger \n Major \n Storm \n Minor \n Unmutal",
+	"YanmeeCooldown" : "No Information.",
+
+	"KigYarRanks" : "Commander \n Imerial \n Zealot \n Ultra \n Champion <-- Can change species. \n Commando \n Murmillo \n Major \n Storm \n Minor",
+	"KigYarCooldown" : "2 Weeks \n 1-2 Weeks \n 1 Week \n 6 Days \n 5-6 Days \n 4 Days \n 3 Days \n 2-3 Days \n 2 Days \n 1 Day",
+
+	"UnngoyRanks" : "Commander \n Imerial \n Zealot \n Ultra \n Champion <-- Can change species. \n Commando \n Murmillo \n Major \n Storm \n Minor",
+	"UnngoyCooldown" : "2 Weeks \n 1-1/2 Week(S) Weeks \n 5 Week \n 4-5 Days \n 3 Days \n 2 Days \n 2 Days \n 1 Day \n 1 Day \n Same Day as training."
 }
