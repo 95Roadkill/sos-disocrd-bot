@@ -123,7 +123,7 @@ bot.on("message", async message => {
 				const reaction = collected.first();
 				switch (reaction.emoji.name){
 					case '🦎':
-						let myembed = new Discord.RichEmbed() 
+						let Embed = new Discord.RichEmbed() 
 							.setTitle('Sangheili Ranks.') 
 							.setThumbnail('https://www.halopedia.org/images/7/73/H2A_Sangheili_Ultra_2.png')
 							.addField("Ranks",Ranks.Sangheili) 
