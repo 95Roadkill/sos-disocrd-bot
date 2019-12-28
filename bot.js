@@ -29,8 +29,6 @@ var Activities = [
 var SQ = new SourceQuery(1000); // 1000ms timeout
 SQ.open(Settings.IP, Settings.Port);
 
-
-
 function Timeout(time){
 	if (CommandUsed) return;
 	CommandUsed = true
