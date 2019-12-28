@@ -1,4 +1,4 @@
 {
-	"SangheiliRanks" : "**Leader of the SoS** \n Arbiter \n \n **Senior Command** \n High Councilor \n Councilor \n Imperial Fleet Admiral \n Fleet Admiral \n Supreme Commander \n Fleet Master \n Shipmaster \n Field Master \n Zealot \n General \n Field Marshall \n Commander \n Ultra \n Blade Master \n Major \n Storm \n Minor",
-	"SangheiliCooldown" : "NA \n NA \n NA \n NA \n 5 Weeks \n 3-4 Weeks \n 3-4 Weeks \n 2-3 Weeks \n 2-3 Weeks \n 2 Weeks \n 2 Weeks \n 2 Weeks \n 2 Weeks \n 1 Week \n 5 Days \n 4 Days \n 3 Days \n 2 Days"
+	"SangheiliRanks" : "**Leader of the SoS** \n Arbiter \n \n **Senior Command** \n High Councilor \n Councilor \n Imperial Fleet Admiral \n Fleet Admiral \n Supreme Commander \n \n **High Command ** \n Fleet Master \n Shipmaster \n Field Master \n Zealot \n \n **Low Command** \n General \n Field Marshall \n Commander \n \n **Officer** \n Ultra \n Blade Master \n **Military** \n Major \n Storm \n Minor",
+	"SangheiliCooldown" : ""
 }
