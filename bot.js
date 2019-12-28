@@ -1,4 +1,5 @@
 const Settings = require("./bot-settings.json");
+const Ranks = require("./sos-ranks.json");
 const Discord = require("discord.js");
 const SourceQuery = require("sourcequery");
 
@@ -122,7 +123,11 @@ bot.on("message", async message => {
 				const reaction = collected.first();
 				switch (reaction.emoji.name){
 					case '🦎':
-						message.channel.send("Lizard Boi.")
+						let myembed = new Discord.RichEmbed() 
+							.setTitle('Sangheili Ranks.') 
+							.setThumbnail('https://www.halopedia.org/images/7/73/H2A_Sangheili_Ultra_2.png')
+							.addField("Ranks",Ranks.Sangheili) 
+						message.channel.send(Embed);
 						msg.delete();
 					break;
 					case '🐒':
