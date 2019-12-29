@@ -87,9 +87,9 @@ bot.on("message", async message => {
     		.setColor('#800080')
     		.setThumbnail('https://revivalservers.com/home/assets/media/logos/main.png')
     		.addField(`${prefix}Help`,"Info on all the available commands.")
-    		.addField(`${prefix}info`,"Get the HaloRPs server info.")
-    		.addField(`${prefix}players`,"Get the details of every connected player.")
-    		.addField(`${prefix}ranks`,"See all Species ranks.");
+    		.addField(`${prefix}Info`,"Get the HaloRPs server info.")
+    		.addField(`${prefix}Players`,"Get the details of every connected player.")
+    		.addField(`${prefix}Ranks`,"See all Species ranks.");
     	message.channel.send(Embed);
     	Timeout(Settings.Timeout);
 	}
