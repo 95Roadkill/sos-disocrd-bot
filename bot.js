@@ -205,8 +205,7 @@ bot.on("message", async message => {
 		var PlayerScore = "```"
 		var PlayerTime = "```"
 		SQ.getPlayers(function(err, info){
-			console.log(info)
-			for(var i=0; i < info.length - 1; i++){
+			for(var i=0; i < info - 1; i++){
 				if (info[i].name != ""){
 					Players = Players + (i+1) + " : " + info[i].name + "\n";
 					PlayerScore = PlayerScore + info[i].score + "\n";
