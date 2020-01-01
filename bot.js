@@ -206,29 +206,29 @@ bot.on("message", async message => {
 		var PlayerScore = "```"
 		var PlayerTime = "```"
 		SQ.getPlayers(function(err, info){
-			SQ.getInfo(function(err, Player){
-				for(var i=0; i < Player.players - 1; i++){
+			SQ.getInfo(function(err, info){
+				for(var i=0; i < info.length - 1; i++){
 					if (info[i].name != ""){
 						Players = Players + info[i].name + "\n";
 						PlayerScore = PlayerScore + info[i].score + "\n";
 						PlayerTime = PlayerTime + FormatTime(info[i].online) + "\n";
 					}
 				}
-			}
-		}
-			Players = Players + "```"
-			PlayerScore = PlayerScore + "```"
-			PlayerTime = PlayerTime + "```"
 
-			const Embed = new Discord.RichEmbed()
-				.setTitle("Connected Players:")
-    			.setColor('#800080')
-    			.setThumbnail('https://revivalservers.com/home/assets/media/logos/main.png')
-    			.addField('**Players**',Players, true)
-    			.addField('**Score**', PlayerScore, true)
-    			.addField('**Time**', PlayerTime, true);
-    		message.channel.send(Embed);
-    		Timeout(Settings.Timeout);
+				Players = Players + "```"
+				PlayerScore = PlayerScore + "```"
+				PlayerTime = PlayerTime + "```"
+
+				const Embed = new Discord.RichEmbed()
+					.setTitle("Connected Players:")
+	    			.setColor('#800080')
+	    			.setThumbnail('https://revivalservers.com/home/assets/media/logos/main.png')
+	    			.addField('**Players**',Players, true)
+	    			.addField('**Score**', PlayerScore, true)
+	    			.addField('**Time**', PlayerTime, true);
+	    		message.channel.send(Embed);
+	    		Timeout(Settings.Timeout);
+			});
 		});
 	}
 });
